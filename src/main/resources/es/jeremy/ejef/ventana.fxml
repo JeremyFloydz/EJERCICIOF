@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<FlowPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.jeremy.ejef.NuevaPersonaController">
+    <children>
+        <HBox prefHeight="32.0" prefWidth="506.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" wrappingWidth="125.4456901550293">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="10.0" top="7.0" />
+                    </HBox.margin>
+                </Text>
+                <TextField fx:id="nombreField" prefHeight="26.0" prefWidth="351.0" />
+            </children>
+            <FlowPane.margin>
+                <Insets top="20.0" />
+            </FlowPane.margin>
+        </HBox>
+        <HBox prefHeight="32.0" prefWidth="506.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos" wrappingWidth="125.4456901550293">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                    </HBox.margin>
+                </Text>
+                <TextField fx:id="apellidosField" prefHeight="26.0" prefWidth="351.0">
+                    <HBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </HBox.margin>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox prefHeight="32.0" prefWidth="506.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" wrappingWidth="111.84565353393555">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="25.0" top="7.0" />
+                    </HBox.margin>
+                </Text>
+                <TextField fx:id="edadField" prefHeight="26.0" prefWidth="114.0" />
+            </children>
+        </HBox>
+        <HBox prefHeight="62.0" prefWidth="504.0">
+            <children>
+                <Button fx:id="guardarButton" mnemonicParsing="false" text="Guardar">
+                    <HBox.margin>
+                        <Insets left="170.0" top="20.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="cancelarButton" mnemonicParsing="false" text="Cancelar">
+                    <HBox.margin>
+                        <Insets left="60.0" top="20.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</FlowPane>
